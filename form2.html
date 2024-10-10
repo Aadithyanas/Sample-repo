@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Login Page</title>
+    <center><h1>Feedback Form</h1></center>
+    <style >
+        .outerbox {
+            width: 350px;
+            height: 550px;
+            border-width: 5px;
+            background-color:  #e7e7ee;
+            border-style: solid;
+            border-color: #e7e7ee;
+            border-radius: 10px;
+            margin: auto;
+            padding: 10px 15px 10px 15px;
+        }
+        form{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+       
+    </style>
+</head>
+<body style=  background:radial-gradient(#a7a9c2,#df0a0a);>
+   <form action="">
+    <div class="outerbox">
+
+        <label for="feed"><b>Feedback type :</b></label>
+        <br>
+        <select name="feed" id="feed" style="width: 22pc;height: 30px;border-radius: 5px;
+        border-color: white;">
+        <option value="Compliment">Compliment</option>
+        <option value="Good">Good</option>
+        <option value="Average">Average</option>
+        <option value="Poor">Poor</option>
+        </select>
+    
+        <br><br>
+
+        <labal for="mess"><b>Message:</b></labal>
+        <br>
+        <textarea id="mess" name="message" row="20" cols="45"
+        style="width: 350px;height: 70px;border-radius: 5px;border-color: white;"required></textarea>
+
+        <br><br>
+
+        <label for="rating"><b>Website Rating :</b></label>
+
+        <br><br>
+        
+        <input type="radio" id="rating" name="rating" value="Excellent">
+        <label for="rating"><b>Excellent</b></label>
+        <input type="radio" id ="rating" name="rating" value="Good">
+        <label for="rating"><b>Good</b></label>
+        <input type="radio" id ="rating" name="rating" value="Average">
+        <label for="rating"><b>Good</b></label>
+        <input type="radio" id ="rating" name="rating" value="Poor">
+        <label for="rating"><b>poor</b></label>
+    
+        <br><br>
+
+        <label for="email"><b>Email<span style="color: red;">*</span>:</b></label>
+        <input type="email" name="email" id="email"
+        style="border-radius: 5px; width: 350px;height: 30px;border: 1px solid #ffffff;" >
+
+        <br><br>
+
+        <label for="pass"><b>Password( password have minimum 8 charcters):</b></label>
+        <input type="password" id="pass" name="password" minlength="8"  
+        style="width: 350px;height: 30px;border-radius: 5px;border: 1px solid #ffffff;" required>
+
+        <br><br>
+
+        <label for="url"><b>Website URL(optional):</b></label>
+        <input type="text" name="website" size="47" id="url" style="height: 30px;border-radius: 5px;border: 1px solid #ffffff; ">
+
+        <br><br>
+
+        <input type="checkbox"  id="term">
+        <label for="term"><b>I agree to the terms and condition</b></label>
+
+        <br><br>
+
+        <div class="submit"><center>
+        <input type="button" value="Submit" 
+        style="color: white;background-color: rgb(37, 179, 37); border: 1px solid rgb(37, 179, 37); width: 70px;height: 35px;
+        border-radius: 5px;border-color: rgb(37, 179, 37);"></center>
+        </div>
+    
+</div>
+</form>
+    
+</body>
+</html>
