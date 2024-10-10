@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Login Page</title>
+    
+</head>
+<body>
+   <form action="">
+    <div>
+    <label for="feed">Feedback type :</label>
+    <select name="feed" id="feed">
+    <option value="Excellent">Excellent</option>
+    <option value="Good">Good</option>
+    <option value="Average">Average</option>
+    <option value="Poor">Poor</option>
+    </select>
+   </div>
+    <br>
+    <div>
+        <labal for="mess">Message:</labal>
+        <br>
+    <textarea id="mess" name="message" row="4" cols="50" placeholder="Enter the Message...." required></textarea>
+    </div>
+    <br>
+    <label for="rating">Website Rating :</label>
+    
+    
+        <input type="radio" id="rating" name="rating" value="Excellent">
+    <label for="rating">Excellent</label>
+    <input type="radio" id ="rating" name="rating" value="Good">
+    <label for="rating">Good</label>
+    <input type="radio" id ="rating" name="rating" value="Average">
+    <label for="rating">Average</label>
+    <input type="radio" id ="rating" name="rating" value="Poor">
+    <label for="rating">Poor</label>
+   
+    <br><br>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email"placeholder="Enter the email">
+    <br><br>
+    <label for="pass">Password(Ensure the password have minimum 8 charcters):</label>
+    <input type="password" id="pass" name="password" minlength="8" required>
+    <br><br>
+    <label for="url">Website Url(Optional):</label>
+    <input type="text" name="website" size="50" id="url"placeholder="eg:https:/www.com/"
+    <br><br>
+   
+    <input type="checkbox"  id="term">
+    <label for="term">I agree to the terms and condition</label>
+    <br><br>
+    <input type="submit" >
+</form>
+    
+</body>
+</html>
