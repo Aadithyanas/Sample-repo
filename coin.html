@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>coin</title>
+    <style>
+        .coin{
+            display: flex;
+            justify-content:space-between ;
+        }
+        .menu{
+            display: flex;
+            gap:40px
+            
+        }
+        .menu input{
+            width: 100px;
+            height: 30px;
+            margin-top: 10px;
+            background-color: yellowgreen;
+            color: black;
+            border: 1px solid yellowgreen;
+            border-radius: 5px;
+        }
+        .box{
+            display: flex;
+            
+        }
+        .box1{
+            width:50px;
+            height:50px;
+            padding-right: 1px;
+            border:  solid rgb(215, 215, 215);
+            background-color: rgb(222, 216, 250);
+            display: flex;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <div class="coin">
+        <div class="frist">
+           <img src="https://coinswitch.co/_next/static/media/logo.01525825.svg" alt="log"> 
+        </div>
+        <div class="menu">
+            <p>Product  <img src="data:image/png;base64,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" 
+            alt="arrow" width="10px" height="10px"> </p>
+           
+            <p>Ventrues</p>
+            <p>Coins</p>
+            <p>Blog</p>
+            <p>Company  <img src="data:image/png;base64,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" 
+            alt="arrow" width="10px" height="10px"></p>
+            <input type="submit" value="Login To pro">
+        
+
+     
+    </div>
+</div>
+<div style="background-color: lightblue;height:100pc;border-radius: 50px;">
+    <div style="background-color: lightblue;border-radius: 500px;">
+        <img style="padding-left: 100px;width:200px;height: 60px;padding-top: 50px;" src="https://coinswitch.co/_next/static/media/logo.01525825.svg" alt="log">
+    </div>
+    <div>
+        <h1 style="color: black;font-size:80px;padding-left: 100px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Your Innovation</h1>
+        <h1  style="color: rgb(98, 98, 209);font-size:100px;padding-left: 80px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Our Fuel</h1>
+    </div>
+    <div>
+        <h4 style="padding-left: 100px;color: rgb(156, 146, 146);font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">CoinSwitch Ventrues invests in most promising Web3 and <br>
+        blockchain project in India.Does that sound like you?</h4>
+    </div>
+</div>
+
+
+
+
+        
+   
+</body>
+</html>
