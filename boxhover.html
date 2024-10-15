@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Box Hover Effect</title>
+    <style>
+        .mainbox{
+            display: flex;
+           justify-content: center;
+           align-items: center;
+           
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightgray;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+
+       
+        .box:nth-child(3):hover {
+            background-color: orange; 
+            width: 200px; 
+            height: 200px; 
+           
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mainbox">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
