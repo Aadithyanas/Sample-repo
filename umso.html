@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Umso page</title>
+    <script src="https://kit.fontawesome.com/794635e1d8.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+          
+
+        }
+        body{
+            background-color: rgb(0, 0, 0);
+            color: rgb(128, 128, 128);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .page {
+        
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        
+           
+        }
+        .main {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+          
+        }
+        .leftbar {
+            border: 1px solid black;
+            
+            width: 100px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+        .leftbar #logo {
+            width: 100px;
+            height: 100px;
+            padding: 40px;
+            margin-left: 20px;
+            border-radius: 200px;
+            
+        }
+        .rightbar {
+            border: 1px solid black;
+            width: 50%;
+            height: 50px;
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 30px;
+        }
+        .rightbar > div {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            color: white;
+        }
+        .rightbar > div > button {
+            font-size: 20px;
+            padding: 5px;
+            font-weight: 600;
+           background-color: black;
+            color: rgb(255, 255, 255);
+           border-color: rgb(169, 169, 169);
+            
+        }
+        .design {
+           margin: auto;
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin:auto;
+            gap: 30px;
+            padding: 80px;
+            
+        }
+        .design > div:nth-child(1) {
+           
+            padding: 20px;
+        }
+       
+        .design h1 {
+           
+            font-size: 80px;
+            background-color: black;
+            font-style: normal;
+            font-weight: 500;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(255, 255, 255);
+        }
+        #ai{
+            color: blue;
+            
+        }
+        .design h4 {
+            margin-top: 20px;
+        }
+        .design > div:nth-child(2) {
+           border: 1px solid blue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            width: 50%;
+            height: 60px; 
+            padding: 10px;
+            border-radius: 10px;
+           position: relative;
+          
+           
+           
+        }
+       
+        
+        .search::after,.search::before{
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-image:conic-gradient(blue ,rgb(173, 180, 210),rgb(179, 147, 183),rgb(182, 147, 207),rgb(72, 114, 128));
+            top: 50%;
+            left:  50%;
+            translate: -50% -50%;
+            z-index:-1;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        .search::before{
+            filter: blur(1.5rem);
+            opacity: 0.5;
+        }
+        .search > input{
+            width: 500px;
+            height: 55px;
+            border: 0;
+            padding-left: 10px;
+            margin:5px;
+            background-color: black;
+            outline: none;
+      
+           
+        }
+        .Generate>button{
+            width:150px;
+            height: 55px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            border-radius: 10px;
+            background-color: rgb(121, 62, 215);
+            color: white;
+          
+           
+        }
+        #sparkle{
+            font-size: 15px;
+            
+
+        }
+    
+        #star{
+            color: green;
+        }
+        
+        
+        .rating>#star{
+            color:rgb(5, 196, 5);
+            font-size: 12px;
+            display: flex;
+            
+            gap: 10px;
+            align-items: center;
+        }
+        .rating{
+      
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            border-radius: 10px;
+            color: rgb(215, 215, 215);
+            gap: 10px;
+        }
+        .rating>div{
+          
+            font-size: 10px;
+            padding: 8px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            background-color: white;
+            
+            
+        }
+        #star1{
+            font-size: 10px;
+            color: green;
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+        }
+        .design>div:nth-child(4){
+           background-color: white;
+            width: 150px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: black;
+            border-radius: 10px;
+        }
+        .design>div:nth-child(4)>img{
+            width: 50px;
+            height: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="main">
+        <div class="leftbar">
+            <img id="logo" src="data:image/png;base64,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" alt="Umsologo">
+        </div>
+        <div class="rightbar">
+           <div>Pricing</div>
+           <div>Features</div>
+           <div>Showcase</div>
+           <div><button>Login</button></div>
+           <div><button>Signup</button></div>
+        </div>
+    </div>
+    <div class="design">
+        <div>
+            <h1>Get your</h1>
+            <h1 id="ai">AI Generated Website</h1>
+            <h1>In Seconds</h1>
+            <h4>Give it a try right below, without having to sign up!</h4>
+        </div>
+        <div>
+            <div class="search">
+                <input type="search" placeholder="Vedan pizza Restaurant in">
+            </div>
+            <div class="Generate">
+                <button>Generate <span id="sparkle">&#10024;</span></i></button>
+            </div>
+
+        </div>
+        <div class="rating">
+            <a>Excellent</a>
+            <span>
+            <i class="fa-solid fa-star" id="star"></i>
+            <i class="fa-solid fa-star"id="star"></i>
+            <i class="fa-solid fa-star"id="star"></i>
+            <i class="fa-solid fa-star"id="star"></i>
+            <i class="fa-solid fa-star-half"id="star"></i></i>
+             </span>
+            4.8 out of 5 based on 85 reviews
+            
+           <div>
+            <i class="fa-solid fa-star"id="star1"></i>Trustpilot
+           </div>
+        </div>
+        <div>
+            Made with <img src="https://www.umso.com/lib_LUGoPiqXXlDptSWA/n6n24jywpz52ayxr.png" alt="">
+        </div>
+    </div>
+</div>
+</body>
+</html>
