@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Digital Clock</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(45deg, #ff7e5f, #feb47b);
+      font-family: 'Arial', sans-serif;
+    }
+
+    .clock-container {
+      position: relative;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .clock {
+      font-size: 80px;
+      color: white;
+      font-family: 'Courier New', Courier, monospace;
+      letter-spacing: 8px;
+    }
+
+    
+    .floating-numbers {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      font-size: 40px;
+      color: rgba(255, 255, 255, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: -1;
+    }
+
+    .floating-numbers span {
+      position: absolute;
+      font-size: 60px;
+      font-weight: bold;
+      opacity: 0.1;
+      transform: rotate(-20deg);
+      animation: float 10s infinite alternate;
+    }
+
+  
+  </style>
+</head>
+<body>
+
+  <div class="clock-container">
+    <div class="clock" id="clock">00:00:00</div>
+    
+    <!-- Floating Numbers -->
+    <div class="floating-numbers">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <span>5</span>
+    </div>
+  </div>
+
+  
+</body>
+</html>
